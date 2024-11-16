@@ -1,8 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+/**
+ * Routes for handling requests related to "tipoProyecto".
+ *
+ * @module routes/tipoProyectoRoutes
+ */
 const tipoProyectoRoutes = require("./src/routes/tipoProyectoRoutes");
 const clienteRoutes = require("./src/routes/clienteRoutes");
+const etapaRoutes = require("./src/routes/etapaRoutes");
 
 dotenv.config();
 
@@ -19,6 +25,7 @@ mongoose
 
 app.use("/api/tipoproyecto", tipoProyectoRoutes);
 app.use("/api/cliente", clienteRoutes);
+app.use("/api/etapa", etapaRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
