@@ -9,6 +9,7 @@ const dotenv = require("dotenv");
 const tipoProyectoRoutes = require("./src/routes/tipoProyectoRoutes");
 const clienteRoutes = require("./src/routes/clienteRoutes");
 const etapaRoutes = require("./src/routes/etapaRoutes");
+const universidadRoutes = require("./src/routes/universidadRoutes");
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ mongoose
 app.use("/api/tipoproyecto", tipoProyectoRoutes);
 app.use("/api/cliente", clienteRoutes);
 app.use("/api/etapa", etapaRoutes);
+app.use("/api/universidad", universidadRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
