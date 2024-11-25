@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  asesorias-monolito:
+    container_name: asesorias-monolito
+    image: asesorias-monolitov1
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    networks:
+      - asesorias-network
+
+networks:
+  asesorias-network:
