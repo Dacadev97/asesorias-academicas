@@ -2,7 +2,7 @@ version: "3.7"
 services:
   asesorias-monolito:
     container_name: asesorias-monolito
-    image: asesorias-monolitov1
+    image: asesorias-monolito:v1
     build:
       context: .
     ports:
