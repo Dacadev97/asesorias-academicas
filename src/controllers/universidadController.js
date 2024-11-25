@@ -1,4 +1,4 @@
-const Universidad = require("../models/universidad");
+const Universidad = require("../models/Universidad");
 
 exports.create = async (req, res) => {
   try {

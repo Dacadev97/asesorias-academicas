@@ -1,4 +1,4 @@
-version: "3.7"
+
 services:
   asesorias-monolito:
     container_name: asesorias-monolito
